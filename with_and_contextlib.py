@@ -16,5 +16,5 @@ def make_context():
 # ，其中的方法__enter__主要作用就是调用生成器的send方法，执行生成器内部代码直到遇到yield返回
 # ，然后执行with体中的代码，完了后调用__exit__（主要代码也是调用生成器的send方法）再次进入生成器
 print(make_context())
-with make_context() as value:
+with make_context() as value:#
     print(value)
