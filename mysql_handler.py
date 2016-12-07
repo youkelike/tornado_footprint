@@ -1,6 +1,6 @@
 import pymysql
 import logging
-
+pymysql.install_as_MySQLdb()#与MySQLdb语法兼容
 logger = logging.getLogger(__name__)
 
 class MysqlServer(object):
